@@ -1,0 +1,4 @@
+name: GameEvents
+version: ${project.version}
+main: net.serveron.hane.gameevents.GameEvents
+api-version: 1.16
