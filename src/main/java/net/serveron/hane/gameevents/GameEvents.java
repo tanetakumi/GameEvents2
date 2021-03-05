@@ -16,7 +16,7 @@ public final class GameEvents extends JavaPlugin {
 
     TeamBattleListener teamBattleListener;
     public Tag tag;
-    public Escaping escaping;
+    //public Escaping escaping;
     public BlockRun blockRun;
 
     @Override

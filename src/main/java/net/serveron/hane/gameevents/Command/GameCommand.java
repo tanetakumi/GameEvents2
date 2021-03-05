@@ -14,18 +14,12 @@ import java.util.List;
 
 public class GameCommand implements CommandExecutor, TabCompleter {
     private final GameEvents plugin;
+    private final Player player;
 
     public GameCommand(GameEvents plugin) {
         this.plugin = plugin;
         plugin.getCommand("cg").setExecutor(this);
-    }
 
-    private void Notify(String text) {
-        for (Player p : Bukkit.getOnlinePlayers()) {
-            if(p.hasPermission("op")) {
-                p.sendMessage(ChatColor.AQUA + text);
-            }
-        }
     }
 
     @Override
